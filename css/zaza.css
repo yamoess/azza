@@ -1,0 +1,146 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Lato);
+.dashblue {width: 100%; float:left;  padding:0;background:transparent;border-bottom: 1px dashed blue;}
+.dashgray {width: 100%; float:left;  padding:0;background:transparent;border-bottom: 1px dashed gray;}
+.dashred {width: 100%; float:left;  padding:0;background:transparent;border-bottom: 1px dashed red;}
+.encloss{display:block;color:#FFB164;padding: 1px 1px 1px 1px;border:1px blue solid;}
+.nodecor{text-decoration:none}
+
+.spacer00{height:0.25vh;}
+.spacer01{height:0.5vh;}
+.spacer02{height:0.75vh;}
+.spacer03{height:1.5vh;}
+.bluu{color:#1f49af;}
+/* Alignment */
+.lefty{text-align:left!important}
+.righty{text-align:right}
+.centy{text-align:center}
+.vcenty{vertical-align:middle}
+.justy{text-align:justify}
+.bold{font-weight:700}
+#Footer p { font-size: 2.5vw !important; }
+
+w3-col.l4{
+  position: fixed;
+  z-index: 99;
+  left: 65%;
+  top: 6.15%;
+  width:34.33%;
+  float:right;
+}
+
+.w3-col.l8{
+  position: relative;
+  display:inline-block;
+  left: 0%;
+  top: 6.15%;
+  float:left;
+}
+
+
+/* FLUID DISPLAYS */
+.fullcol{width:99vw;}
+.leftside{width:71vw;float:left;}
+.rightside{width:26vw;float:right;}
+
+
+
+.hideit{display:none;}
+.showit{display:block;}
+.fixit{position:fixed;z-index:1;}
+.rollit{position:relative;}
+.allzero{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+
+
+.imgcol {
+  float: left;
+  width: 50%;
+  padding: 0px;
+  height:50px;
+}
+
+.imgrow {width:100%;padding: 0 0 0 0;}
+
+/* Clearfix (clear floats) */
+.imgrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.titlfontx{font-size: 1.225vw;}
+@media only screen and (max-width : 767px){.titlfontx{font-size: 3.35vw;}}
+@media (min-width: 768px) and (max-width: 1024px) {.titlfontx{font-size: 2.445vw;}}
+
+
+@media only screen and (max-width : 719px) 
+{	.leftside{width:100%}
+	.rightside{width:100%}
+	.txtfont{font-size: 0.9em;}
+	.titlfont{font-size: 1.25em;}
+	.titlfont1{font-size: 1.35em;}
+}
+
+@media (min-width: 1025px) {
+	.imgheight{height: 51px;vertical-align: middle; background-color: white; max-width: 100%; width: auto; float: none;}
+	
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.imgheight{height: 71px;vertical-align: middle; background-color: white; max-width: 100%; width: auto; float: none;}
+	.imgcol{width:100%;height:30px;}
+	.toppy{margin-top:7.7vh;}
+	.w3-threequarter{width:100%!important}  
+	.w3-quarter{width:100%!important}
+	.leftside{width:63.5vw;float:left;}
+	.rightside{width:33vw;float:right;}
+
+	.txtfont{font-size: 0.9em;}
+	.titlfont{font-size: 1.05em;}
+	.titlfont1{font-size: 1.15em;}
+}
+	
+  
+}
+@media (min-width: 0px) and (max-width: 767px) {	
+	.imgheight{height: 71px;vertical-align: middle; background-color: white; max-width: 100%; width: auto; float: none;}
+	.imgcol{width:100%;height:30px;}
+	.toppy{margin-top:7.7vh;}
+
+	.w3-threequarter{width:100%!important} 
+	.w3-quarter{width:100%!important}  
+}
+
+/* RESPONSIVE SCREENS......*/
+/* MOBILE PHONES PORTRAIT----- mobile phones portrait */
+@media only screen and (max-width : 719px) 
+{.desktop {display: none}.mobile {display: block}.tablet {display: none}}
+
+/* TABLET PORTAIT OR MOBILES LANDSCAPE ----- Small devices (portrait tablets and large phones */
+@media only screen and (min-width : 720px) and (max-width : 1019px) 
+{.desktop {display: none}.mobile {display: none}.tablet {display: block}}
+
+
+/* TABLET LANDSCAPE ----- Medium devices (landscape tablets) */
+@media only screen and (min-width : 1020px)
+{.desktop {display: block}.mobile {display: none}.tablet {display: none}}
+
+/* LAPTOPS AND LARGER TABLETS ----  Large devices (laptops/desktops) */
+/*  @media only screen and (min-width : 991px) and (max-width : 1099px)  */
+/*{.desktop {display: none}.laptop {display: block}.mobilel {display: none}.mobilep {display: none}.tablet {display: none}} */
+
+
+	.xmobilep{position: relative;width: 450px;margin: 0 0 0 0;}
+	.xmobilel{position: relative;width: 640px;margin: 0 0 0 0;}
+	.xtabletp{position: relative;width: 768px;margin: 0 0 0 0;}
+	.xtablet{position: relative;width: 990px;margin: 0 0 0 0;}
+	.xlaptop{position: relative;width:1440px;margin: 0 0 0 0;}
+	.xdesktop{position: relative;width:auto;margin: 0 0 0 0}
+
+.smallscreen{display:block;}
+
+	
+@media only screen and (max-width : 641){
+	.smallscreen{display:none;}
+}
