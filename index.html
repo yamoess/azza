@@ -38,8 +38,59 @@
     <link href="css/style.css" rel="stylesheet">
 
 <style>
-</style>
-    
+#scroll-container {
+  border: 3px solid black;
+  border-radius: 5px;
+  width: auto;
+  height: 15%;
+  overflow: hidden;
+  text-align: center;
+	position: fixed;
+    text-align: center;
+    left: 0;
+    right: 0;  
+}
+
+#scroll-text {
+  color:#000!important;background-color:#fdf5e6!important;
+  height: 10%;
+  text-align: center;
+  
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 25s linear infinite;
+  -webkit-animation: my-animation 25s linear infinite;
+  animation: my-animation 25s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}  </style>
+
 </head>
 
 <body>
@@ -95,24 +146,31 @@
 							With over 25 years of professional experience and knowledge of the market, the industry requirements, 
 							procedures and processes, and with specialized manpower, we can deliver to the client the best and customized services 
 							for their requirements on their ongoing/new <a id="about">projects</a></p>
+					<div class ="" style="padding:0;margin-top:5px">
+							<div class id="scroll-text" style="border:2px gray dotted;font-weight:800;margin-top:-22px;width:110%">
+		<span class="titlfontx" style="color:red"> FAST TRACK SUBMISSION OF  ****  </span>
+		<span  class="titlfontx" style="color:blue"> WORK BREAKDOWN STRUCTURE  ***  BID PACKAGES  ***  PROCUREMENT SCHEDULE   ***  SUBCONTRACT SCHEDULE ***  
+			MATERIAL REQUISITION PACKAGES ***  ***  REQUEST FOR PROPOSALS  ***  TECHNICAL, LOLGISTICAL AND COMMERCIAL COMPARISION OF PROPLSALS  ***  
+			INSPECTION  AND TEST PLANS  </span>
+		<span class="titlfontx" style="color:RED"> ......Please CONTAT US ON +91 949 00 444 61     </span>
+		<span class="titlfontx"style="color:RED"> OR emial on azharmoinuddin@gmail.com. </span>
+							
+							
+							</div>
+						</div>
 
+
+		    
             </div>
             <div class="col-lg-13 p-5 wow fadeIn w3-card w3-white" data-wow-delay="0.1s"  style="margin-left:10px;margin-right:20px;">
                 <h1 class="row display-8 mb-3 w3-teal" style="margin-top:-38px">&nbsp;&nbsp;ABOUT US</h1>
 						<p class="disptxt001" style="text-align:justify">
-							The construction &amp; Infrastructure Industry has witnessed an unprecedent growth lately with the launching of numerous high value projects.
-							The growth in this industry looks to reach higher and higher levels in the near future too.
-							These new projects that are coming up are some of the most complex and challenging projects, usually with a tight schedules and lot of constraints. 
+							Our’s is a dedicated team of professionals that is headed by a qualified Civil Engineer with over 25 years of professional experience in managing projects with special emphasis on complex areas of the project such as procurement, contracts, costing, variation orders, value engineering, project controls and other related activities on projects of high value. These new projects that are coming up are some of the most complex and challenging projects, usually with a tight schedules and lot of constraints.
 						</p>
 						<p class="disptxt001" style="text-align:justify">
-							While the prospect of growth in construction industry appears to be very promising, the market, 
-							on the other hand, is also facing an acute shortage of qualified and experienced manpower to 
-							handle the demanding requirements of the clients and consultants of these high value projects. 
-						</p>
+							With experience in projects that comprise of petrochemical facilities, industrial plants, high rise commercial towers, hospitals, hotels and apartment buildings ranging from standard RCC to Precast or post-tensioned concrete, Structural Steel or Pre-Engineered steel buildings, our clients can count on getting a professional service to them.						</p>
 						<p class="disptxt001" style="text-align:justify">
-							With over 25 years of professional experience and knowledge of the market, the industry requirements, 
-							procedures and processes, and with specialized manpower, we can deliver to the client the best and customized services 
-							for their requirements on their ongoing/new projects
+							OUR main objective is to provide critical and specialized DOCUMENTATION services to our clients associated with the Civil Engineering industry. These include, but not limited to, Procurement Management, Estimation &amp; Tendering, Value Engineering, Quality Assurance, Quality Control, Inspection and Testing, Project Control incuding Subcontrator Sourcing and management, Scheduling &amp; Planning, Budgeting, Variation Orders, Etc.						
 						</p>
             </div>
         </div>
