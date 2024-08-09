@@ -38,79 +38,92 @@
     <link href="css/style.css" rel="stylesheet">
 
 <style>
-#scroll-container {
-  border: 3px solid black;
-  border-radius: 5px;
-  width: auto;
-  height: 15%;
-  overflow: hidden;
-  text-align: center;
-	position: fixed;
-    text-align: center;
-    left: 0;
-    right: 0;  
+#marqcontain {
+    width: 100%;
+    height: 1.9rem;
+    font-family: Montserrat;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    background:#BDDEFF;
+    color: #fff;
 }
+#marqcontain .scroll {
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    white-space: nowrap;
+}
+@media (max-width: 576px){#marqcontain .scroll {animation: loop 50s linear infinite;}}
+@media (max-width: 768px){#marqcontain .scroll {animation: loop 40s linear infinite;}}
+@media (max-width: 992px){#marqcontain .scroll {animation: loop 65s linear infinite;}}
+@media (max-width: 1200px){#marqcontain .scroll {animation: loop 60s linear infinite;}}
+@media (min-width: 1400px){#marqcontain .scroll {animation: loop 40s linear infinite;}}
 
-#scroll-text {
-  color:#000!important;background-color:#fdf5e6!important;
-  height: 10%;
-  text-align: center;
-  
-  /* animation properties */
-  -moz-transform: translateY(100%);
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-  
-  -moz-animation: my-animation 25s linear infinite;
-  -webkit-animation: my-animation 25s linear infinite;
-  animation: my-animation 25s linear infinite;
+
+.fade {
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(
+        90deg,
+        #000,
+        transparent 30%,
+        transparent 90%,
+        #000
+    );
+    inset: 0;
+    pointer-event: none;
 }
+@keyframes loop {
+    0% {transform: translateX(25%);}
+    100% {transform: translateX(-100%);}
 }
-#scroll-text:hover {
+.item {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    color: red;
+    font-size: .9rem;
+    background-color: #BDDEFF;
+    font-size:1.21em;
+    font-weight:800;
+    padding: 0.7rem 1rem;
+    margin: 0rem 1rem;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+    box-shadow:
+    0 0.1rem 0.2rem #00000033,
+    0 0.1rem 0.5rem #0000004d,
+    0 0.2rem 01.5rem #00000066,
+}  
+
+#marqcontain:hover {
+  animation-play-state: paused;
+}
+.item:hover {
   animation-play-state: paused;
 }
 
-/* for Firefox */
-@-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-100%); }
-}
-
-/* for Chrome */
-@-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-100%); }
-}
-
-@keyframes my-animation {
-  from {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  to {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}  </style>
-
+</style>
+    
 </head>
 
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 fadeIn t-az"  style="height:65px">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 fadeIn t-az"  style="height:55px;border-bottom:1px gray dotted">
         <a href="https://yamoess.github.io/main/" class="navbar-brand d-flex align-items-center">
 	        <h1 class="m-0 text-primary display-11" style="width:auto;font-weight:600">&nbsp;&nbsp;<span class="dkbrown ">YAMO Engineering Support Services</span></h1>
             <!--<h1 class="m-0 text-primary display-11" style="width:auto;font-weight:600">&nbsp;&nbsp;<span class="dkbrown ">YAMO Engineering Support Services</span></h1>-->
             <!--<h1 class="my-3 text-primary display-11" style="width:auto;font-weight:600">&nbsp;&nbsp;<span class="dkbrown "><img alt="logos" src="imgs/logox001.png" width="90%" height="2.1vh"></span></h1> -->
 
         </a>
-        <button type="button" class="navbar-toggler me-4 show" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler me-4 mt-2 mb-1 show" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse t-az" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-3 p-lg-0 w3-white hidbord">
+            <div class="navbar-nav ms-auto p-3 p-lg-0 w3-white hidbord" style="height:55px">
                 <a href="https://yamoess.github.io/main/" class="nav-item nav-link active"><strong class="titlfontx">Home</strong></a>
                 <a href="#about" class="nav-item nav-link"><strong class="titlfontx">About</strong></a>
                 <div class="nav-item dropdown">
@@ -131,8 +144,43 @@
         </div>
    </nav>
     <!-- Navbar End -->
+<!-- Banner Start -->
+
+<div id='marqcontain' style="display:flex;z-index:99">
+    <div class='scroll' id='scroll-one'>
+        <div class='item'> *********</div>
+        <div class='item'> WORK BREAKDOWN STRUCTURE</div>
+        <div class='item'>BID PACKAGES</div>
+        <div class='item'>PROCUREMENT SCHEDULE</div>
+        <div class='item'> SUBCONTRACT SCHEDULE</div>
+        <div class='item'>MATERIAL REQUISITION PACKAGES</div>
+        <div class='item'>REQUEST FOR PROPOSALS</div>
+        <div class='item'>TECHNICAL, LOLGISTICAL AND COMMERCIAL COMPARISION OF PROPLSALS</div>
+        <div class='item'>INSPECTION AND TEST PLANS</div>
+        <div class='item' style="color:red">*****</div>
+        <div class='item' style="color:cyan">CONTAT US ON +91 949 00 444 61 </div>
+        <div class='item' style="color:cyan"> OR emial us on azharmoinuddin@gmail.com. </div>        
+    </div>
+    <div class='scroll' id='scroll-two'>
+        <div class='item'> *********</div>
+        <div class='item'> WORK BREAKDOWN STRUCTURE</div>
+        <div class='item'>BID PACKAGES</div>
+        <div class='item'>PROCUREMENT SCHEDULE</div>
+        <div class='item'> SUBCONTRACT SCHEDULE</div>
+        <div class='item'>MATERIAL REQUISITION PACKAGES</div>
+        <div class='item'>REQUEST FOR PROPOSALS</div>
+        <div class='item'>TECHNICAL, LOLGISTICAL AND COMMERCIAL COMPARISION OF PROPLSALS</div>
+        <div class='item'>INSPECTION AND TEST PLANS</div>
+        <div class='item' style="color:red">*****</div>
+        <div class='item' style="color:cyan">CONTAT US ON +91 949 00 444 61 </div>
+        <div class='item' style="color:cyan"> OR emial us on azharmoinuddin@gmail.com. </div>        
+    </div>
+    <div class='fade'></div>
+</div>
+<!-- Banner end -->
+		
     <!-- Header Start -->
-    <div class="container-fluid header w3-sand p-0 mb-3">
+    <div class="container-fluid header w3-sand p-0 mb-3" style="margin-top:-7px">
         <div class="row g-0 align-items-top flex-lg-row">
             <div class="col-lg-13 p-5 wow fadeIn w3-card w3-white" data-wow-delay="0.1s"  style="margin-left:10px;margin-right:20px;">
                 <h1 class="row display-8 mb-3 w3-teal" style="margin-top:-38px">&nbsp;&nbsp;INTRODUCTION</h1>
@@ -150,37 +198,25 @@
 							With over 25 years of professional experience and knowledge of the market, the industry requirements, 
 							procedures and processes, and with specialized manpower, we can deliver to the client the best and customized services 
 							for their requirements on their ongoing/new <a id="about">projects</a></p>
-					<div class ="" style="padding:0;margin-top:5px">
-							<div class id="scroll-text" style="border:2px gray dotted;font-weight:800;margin-top:-22px;width:110%">
-		<span class="titlfontx" style="color:red"> FAST TRACK SUBMISSION OF  ****  </span>
-		<span  class="titlfontx" style="color:blue"> WORK BREAKDOWN STRUCTURE  ***  BID PACKAGES  ***  PROCUREMENT SCHEDULE   ***  SUBCONTRACT SCHEDULE ***  
-			MATERIAL REQUISITION PACKAGES ***  ***  REQUEST FOR PROPOSALS  ***  TECHNICAL, LOLGISTICAL AND COMMERCIAL COMPARISION OF PROPLSALS  ***  
-			INSPECTION  AND TEST PLANS  </span>
-		<span class="titlfontx" style="color:RED"> ......Please CONTAT US ON +91 949 00 444 61     </span>
-		<span class="titlfontx"style="color:RED"> OR emial on azharmoinuddin@gmail.com. </span>
-							
-							
-							</div>
-						</div>
+					
 
-
-		    
             </div>
-            <div class="col-lg-13 p-5 wow fadeIn w3-card w3-white" data-wow-delay="0.1s"  style="margin-left:10px;margin-right:20px;">
+            <div class="col-lg-13 p-5 wow fadeIn w3-card w3-white" data-wow-delay="0.1s"  style="margin-left:10px;margin-right:20px;margin-top:-44px;">
                 <h1 class="row display-8 mb-3 w3-teal" style="margin-top:-38px">&nbsp;&nbsp;ABOUT US</h1>
 						<p class="disptxt001" style="text-align:justify">
 							Our’s is a dedicated team of professionals that is headed by a qualified Civil Engineer with over 25 years of professional experience in managing projects with special emphasis on complex areas of the project such as procurement, contracts, costing, variation orders, value engineering, project controls and other related activities on projects of high value. These new projects that are coming up are some of the most complex and challenging projects, usually with a tight schedules and lot of constraints.
 						</p>
 						<p class="disptxt001" style="text-align:justify">
-							With experience in projects that comprise of petrochemical facilities, industrial plants, high rise commercial towers, hospitals, hotels and apartment buildings ranging from standard RCC to Precast or post-tensioned concrete, Structural Steel or Pre-Engineered steel buildings, our clients can count on getting a professional service to them.						</p>
+							With experience in projects that comprise of petrochemical facilities, industrial plants, high rise commercial towers, hospitals, hotels and apartment buildings ranging from standard RCC to Precast or post-tensioned concrete, Structural Steel or Pre-Engineered steel buildings, our clients can count on getting a professional service to them.
+						</p>
 						<p class="disptxt001" style="text-align:justify">
 							OUR main objective is to provide critical and specialized DOCUMENTATION services to our clients associated with the Civil Engineering industry. These include, but not limited to, Procurement Management, Estimation &amp; Tendering, Value Engineering, Quality Assurance, Quality Control, Inspection and Testing, Project Control incuding Subcontrator Sourcing and management, Scheduling &amp; Planning, Budgeting, Variation Orders, Etc.						
 						</p>
+						
             </div>
         </div>
     </div> 
     <!-- Header End -->	
-
     <!-- Service Start -->
    <div class="container-fluid header w3-sand p-0 mb-3">
         <div class="row g-0 align-items-top flex-lg-row">
