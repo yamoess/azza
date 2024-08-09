@@ -61,4 +61,9 @@
 .item:hover {
   animation-play-state: paused;
 }
+	@media (max-width: 576px){#marqcontain .scroll {animation: myloop  50s linear infinite;}}
+	@media (max-width: 768px){#marqcontain .scroll {animation: myloop  40s linear infinite;}}
+	@media (max-width: 992px){#marqcontain .scroll {animation: myloop  65s linear infinite;}}
+	@media (max-width: 1200px){#marqcontain .scroll {animation: myloop  60s linear infinite;}}
+	@media (min-width: 1400px){#marqcontain .scroll {animation: myloop  40s linear infinite;}}
 
