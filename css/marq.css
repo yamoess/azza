@@ -1,0 +1,64 @@
+﻿#marqcontain{
+    width: 100%;
+    height: 1.9rem;
+    font-family: Montserrat;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    background:#BDDEFF;
+    color: #fff;
+}
+#marqcontain .scroll{
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    white-space: nowrap;
+    animation: myloop 40s linear infinite;
+}
+.fade{
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(
+        90deg,
+        #000,
+        transparent 30%,
+        transparent 90%,
+        #000
+    );
+    inset: 0;
+    pointer-event: none;
+}
+
+@keyframes myloop {
+    0% {transform: translateX(30%);}
+    100% {transform: translateX(-100%);}
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    color: red;
+    font-size: .9rem;
+    background-color: #BDDEFF;
+    font-size:1.21em;
+    font-weight:800;
+    padding: 0.7rem 1rem;
+    margin: 0rem 1rem;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+    box-shadow:
+    0 0.1rem 0.2rem #00000033,
+    0 0.1rem 0.5rem #0000004d,
+    0 0.2rem 01.5rem #00000066,
+}  
+
+#marqcontain:hover {
+  animation-play-state: paused;
+}
+.item:hover {
+  animation-play-state: paused;
+}
+
