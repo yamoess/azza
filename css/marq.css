@@ -5,7 +5,6 @@
     position: relative;
     overflow: hidden;
     white-space: nowrap;
-    background:#BDDEFF;
     color: #fff;
 }
 #marqcontain .scroll{
@@ -15,24 +14,12 @@
     justify-content: space-around;
     width: fit-content;
     white-space: nowrap;
-    animation: myloop 40s linear infinite;
-}
-.fade{
-    width: 100%;
-    position: absolute;
-    background: linear-gradient(
-        90deg,
-        #000,
-        transparent 30%,
-        transparent 90%,
-        #000
-    );
-    inset: 0;
-    pointer-event: none;
+    animation: myloop 60s linear infinite;
+    
 }
 
 @keyframes myloop {
-    0% {transform: translateX(30%);}
+    0% {transform: translateX(15%);}
     100% {transform: translateX(-100%);}
 }
 
@@ -40,14 +27,14 @@
     display: flex;
     align-items: center;
     gap: 0 0.2rem;
-    color: red;
+    color: white;
     font-size: .9rem;
-    background-color: #BDDEFF;
+    background-color:#480e17;
     font-size:1.21em;
     font-weight:800;
     padding: 0.7rem 1rem;
     margin: 0rem 1rem;
-    border-radius: 0.3rem;
+    border-radius: 2.3rem;
     white-space: nowrap;
     box-shadow:
     0 0.1rem 0.2rem #00000033,
