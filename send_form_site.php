@@ -77,7 +77,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "contact@yamoess.com";
+    $email_to = "azharmoinuddin@gmail.com";
     $email_subject = "Message from Website";
  
     function died($error) {
