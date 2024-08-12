@@ -1,4 +1,4 @@
-﻿#marqcontain{
+#marqcontain{
     width: 100%;
     height: 1.9rem;
     font-family: Montserrat;
@@ -7,6 +7,8 @@
     white-space: nowrap;
     color: #fff;
 }
+
+@media (min-width: 576px){
 #marqcontain .scroll{
     background:white;
     display: flex;
@@ -14,13 +16,58 @@
     justify-content: space-around;
     width: fit-content;
     white-space: nowrap;
-    animation: myloop 60s linear infinite;
-    
+    animation: myloop  50s linear infinite;}
+}
+@media (min-width: 768px){
+#marqcontain .scroll{
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    white-space: nowrap;
+    animation: myloop  70s linear infinite;}
+}
+
+@media (min-width: 992px){
+#marqcontain .scroll{
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    white-space: nowrap;
+    animation: myloop  120s linear infinite;}
+}
+@media (max-width: 1200px){
+#marqcontain .scroll{
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    white-space: nowrap;
+    animation: myloop  140s linear infinite;}
+}
+@media (min-width: 1400px){
+#marqcontain .scroll{
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    white-space: nowrap;
+    animation: myloop  180s linear infinite;}
 }
 
 @keyframes myloop {
     0% {transform: translateX(15%);}
     100% {transform: translateX(-100%);}
+}
+
+
+#marqcontain :hover {
+  animation-play-state: paused;
 }
 
 .item {
@@ -40,17 +87,25 @@
     0 0.1rem 0.2rem #00000033,
     0 0.1rem 0.5rem #0000004d,
     0 0.2rem 01.5rem #00000066,
-}  
+} 
 
-#marqcontain:hover {
-  animation-play-state: paused;
-}
-.item:hover {
-  animation-play-state: paused;
-}
-	@media (max-width: 576px){#marqcontain .scroll {animation: myloop  50s linear infinite;}}
-	@media (max-width: 768px){#marqcontain .scroll {animation: myloop  40s linear infinite;}}
-	@media (max-width: 992px){#marqcontain .scroll {animation: myloop  65s linear infinite;}}
-	@media (max-width: 1200px){#marqcontain .scroll {animation: myloop  60s linear infinite;}}
-	@media (min-width: 1400px){#marqcontain .scroll {animation: myloop  40s linear infinite;}}
+
+.item1 {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    color: white;
+    font-size: .9rem;
+    background-color:red;
+    font-size:1.21em;
+    font-weight:800;
+    padding: 0.7rem 1rem;
+    margin: 0rem 1rem;
+    border-radius: 2.3rem;
+    white-space: nowrap;
+    box-shadow:
+    0 0.1rem 0.2rem #00000033,
+    0 0.1rem 0.5rem #0000004d,
+    0 0.2rem 01.5rem #00000066,
+} 
 
