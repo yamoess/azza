@@ -8,7 +8,8 @@
     color: #fff;
 }
 
-@media (min-width: 576px){
+
+@media (max-width: 576px){
 #marqcontain .scroll{
     background:white;
     display: flex;
@@ -16,8 +17,11 @@
     justify-content: space-around;
     width: fit-content;
     white-space: nowrap;
-    animation: myloop  50s linear infinite;}
-}
+    animation: myloop  100s linear infinite;}
+@keyframes myloop {
+    0% {transform: translateX(3%);}
+    100% {transform: translateX(-100%);}
+}}
 @media (min-width: 768px){
 #marqcontain .scroll{
     background:white;
@@ -27,7 +31,10 @@
     width: fit-content;
     white-space: nowrap;
     animation: myloop  70s linear infinite;}
-}
+@keyframes myloop {
+    0% {transform: translateX(15%);}
+    100% {transform: translateX(-100%);}
+}}
 
 @media (min-width: 992px){
 #marqcontain .scroll{
@@ -38,8 +45,12 @@
     width: fit-content;
     white-space: nowrap;
     animation: myloop  120s linear infinite;}
-}
-@media (max-width: 1200px){
+@keyframes myloop {
+    0% {transform: translateX(15%);}
+    100% {transform: translateX(-100%);}
+}}
+
+@media (min-width: 1200px){
 #marqcontain .scroll{
     background:white;
     display: flex;
@@ -48,7 +59,11 @@
     width: fit-content;
     white-space: nowrap;
     animation: myloop  140s linear infinite;}
-}
+@keyframes myloop {
+    0% {transform: translateX(15%);}
+    100% {transform: translateX(-100%);}
+}}
+
 @media (min-width: 1400px){
 #marqcontain .scroll{
     background:white;
@@ -58,12 +73,11 @@
     width: fit-content;
     white-space: nowrap;
     animation: myloop  180s linear infinite;}
-}
 
 @keyframes myloop {
     0% {transform: translateX(15%);}
     100% {transform: translateX(-100%);}
-}
+}}
 
 
 #marqcontain :hover {
@@ -76,11 +90,11 @@
     gap: 0 0.2rem;
     color: white;
     font-size: .9rem;
-    background-color:#480e17;
+    background-color:#0C48A9;
     font-size:1.21em;
     font-weight:800;
-    padding: 0.7rem 1rem;
-    margin: 0rem 1rem;
+    padding: 0.2rem 1rem;
+    margin:  0 2px 0 2px;
     border-radius: 2.3rem;
     white-space: nowrap;
     box-shadow:
@@ -96,11 +110,11 @@
     gap: 0 0.2rem;
     color: white;
     font-size: .9rem;
-    background-color:red;
+    background-color:#0D61FA;
     font-size:1.21em;
     font-weight:800;
     padding: 0.7rem 1rem;
-    margin: 0rem 1rem;
+    margin:  0 2px 0 2px;
     border-radius: 2.3rem;
     white-space: nowrap;
     box-shadow:
